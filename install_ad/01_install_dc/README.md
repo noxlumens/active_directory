@@ -18,8 +18,13 @@ Get-NetIPAddress
 
 # Joining the Workstation to the domain
 
+1. Set DNS
+```
+Get-DnsClientSrverAddress
+Set-DnsClientSrverAddress -InterfaceAlias Ethernet0 -ServerAddresses <DC_IP_Address>
+```
 
-
+2. Add workstation to domain
 ```
 Add-Computer -Domainname xyz.com -Credential xyz\Administrator -Force -Restart
 ```
