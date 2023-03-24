@@ -20,8 +20,8 @@ Get-NetIPAddress
 
 1. Set DNS
 ```
-Get-DnsClientSrverAddress
-Set-DnsClientSrverAddress -InterfaceAlias Ethernet0 -ServerAddresses <DC_IP_Address>
+Get-DnsClientServerAddress
+Set-DnsClientServerAddress -InterfaceAlias Ethernet0 -ServerAddresses <DC_IP_Address>
 ```
 
 2. Add workstation to domain
