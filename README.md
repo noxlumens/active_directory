@@ -1,1 +1,1 @@
-# Active Directory Setup
+Scripts for managing various aspects of AD
